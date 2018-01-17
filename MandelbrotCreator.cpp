@@ -33,7 +33,7 @@ namespace fractal {
                 uint8_t blue = 0;
                 if (m_pixelIter[y*m_width+x] < m_iterations) {
                     double mu = m_muIter[y*m_width+x];
-                    RGB currentColor = m_colorTable.getColor(10*mu/(m_iterations+3));
+                    RGB currentColor = m_colorTable.getColor(5*mu/(m_iterations+3)+0.3);
                     red = currentColor.m_r;
                     green = currentColor.m_g;
                     blue = currentColor.m_b;

@@ -7,7 +7,7 @@
 #define FractalPainter_MandelbrotCreator
 
 #include <vector>
-#include "Bitmap.h"
+#include "BitMap.h"
 #include "ZoomList.h"
 #include "ColorRange.h"
 

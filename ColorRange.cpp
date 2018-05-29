@@ -5,6 +5,7 @@
 
 #include "ColorRange.h"
 #include <fstream>
+#include <iostream>
 
 namespace fractal {
     ColorRange::ColorRange() {
@@ -30,6 +31,7 @@ namespace fractal {
     
     RGB ColorRange::getColor(double d) {
         int numColors = (int) m_colorVec.size();
+//        std::cout << numColors;
         int bottom = ((int)(d*numColors)) % numColors;
         int top = ((int)(d*numColors)+1) % numColors;
         RGB first = m_colorVec[bottom];
